@@ -1,0 +1,27 @@
+<p>{{feedbackMessage}}</p>
+
+<form class="form-horizontal col-lg-6">
+
+  <div class="form-group row">
+    <div class="col-sm-3">
+      <label class="col-form-label">Arquivos OFX</label>
+    </div>
+    <div class="col-sm-9">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+        </div>
+        <div class="custom-file">
+          <input #file type="file" multiple (change)="upload(file.files)" accept=".ofx" class="custom-file-input"
+            id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <label class="custom-file-label" for="inputGroupFile01">selecionar arquivo</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<app-transaction-list [transactions]="transactions"></app-transaction-list>
+
+<input type="button" class="btn btn-primary col-lg-3 col-sm-12 mr-lg-3" value="Salvar" (click)="save()">
+<app-button-back></app-button-back>

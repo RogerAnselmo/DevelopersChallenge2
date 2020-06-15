@@ -1,0 +1,29 @@
+<!-- <a class="btn btn-sm btn-info" [routerLink]="['/view']">consultar</a>
+<a class="btn btn-sm btn-primary">cadastrar</a> -->
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Visualizar Transações</h4>
+        <p class="card-text">Aqui você pode visualizar todas as transações que já foram umportadas para nosso sistema
+        </p>
+        <p class="card-text">Além disso você pode filtrálas e ordenalas da maneira que quiser</p>
+        <a [routerLink]="['/view']" class="btn btn-primary">Acessar</a>
+        <!-- <a class="btn btn-sm btn-info">consultar</a> -->
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Importar Novas Transações</h4>
+        <p class="card-text">Aqui vocêimporta suas transações através dos asquivos OFX disponibilizados pelo seu banco</p>
+        <p class="card-text">Não se preocupe com transações repetidas. A gente consegue separar isso tud pra você!</p>
+        <a  [routerLink]="['/import']" class="btn btn-primary">Acessar</a>
+        <!-- <a class="btn btn-sm btn-info">consultar</a> -->
+      </div>
+  </div>
+</div>
+
+</div>
